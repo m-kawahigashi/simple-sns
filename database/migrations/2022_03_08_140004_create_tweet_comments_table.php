@@ -14,8 +14,12 @@ class CreateTweetCommentsTable extends Migration
     public function up()
     {
         Schema::create('tweet_comments', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('tweet_id');
+            $table->unsignedBigInteger('comment_id');
+
+            // 外部キー制約
+            $table->foreign('tweet_id')->references('id')->on('tweets');
+            $table->foreign('comment_id')->references('id')->on('comments');
         });
     }
 
