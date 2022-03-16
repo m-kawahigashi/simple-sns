@@ -2,6 +2,6 @@ import { memo, VFC } from "react";
 
 export const Page404 : VFC = memo(() => {
     return (
-        <p>ページが存在しません。</p>
+        <h1>ページが存在しません。</h1>
     )
 });
