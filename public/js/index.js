@@ -49,6 +49,29 @@ var Home = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
 
 /***/ }),
 
+/***/ "./resources/ts/components/pages/Login.tsx":
+/*!*************************************************!*\
+  !*** ./resources/ts/components/pages/Login.tsx ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Login": () => (/* binding */ Login)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+var Login = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+    children: "\u30ED\u30B0\u30A4\u30F3\u753B\u9762\u3067\u3059"
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/ts/components/pages/Page404.tsx":
 /*!***************************************************!*\
   !*** ./resources/ts/components/pages/Page404.tsx ***!
@@ -65,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Page404 = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
     children: "\u30DA\u30FC\u30B8\u304C\u5B58\u5728\u3057\u307E\u305B\u3093\u3002"
   });
 });
@@ -85,20 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./resources/ts/App.tsx");
 
 
- // 試しに
-// import { Button } from '@material-ui/core';
-// const App: React.FC = () => {
-//     return (
-//         <div>
-//             <>
-//                 <p>こんにちは</p>
-//                 <p>できた</p>
-//                 {/* Material-uiが使用できるか確認 */}
-//                 <Button color="primary">Material-ui!</Button>
-//             </>
-//         </div>
-//     )
-// }
+
 
 if (document.getElementById('app')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {}), document.getElementById('app'));
@@ -119,24 +129,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _components_pages_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/pages/Home */ "./resources/ts/components/pages/Home.tsx");
-/* harmony import */ var _components_pages_Page404__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/pages/Page404 */ "./resources/ts/components/pages/Page404.tsx");
+/* harmony import */ var _components_pages_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/pages/Login */ "./resources/ts/components/pages/Login.tsx");
+/* harmony import */ var _components_pages_Page404__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/pages/Page404 */ "./resources/ts/components/pages/Page404.tsx");
+
 
 
 
 
 
 var Router = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Switch, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, Object.assign({
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, Object.assign({
+      exact: true,
+      path: "/"
+    }, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Login__WEBPACK_IMPORTED_MODULE_3__.Login, {})
+    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, Object.assign({
       path: "/home"
     }, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Home__WEBPACK_IMPORTED_MODULE_2__.Home, {})
-    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, Object.assign({
+    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, Object.assign({
       path: "*"
     }, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Page404__WEBPACK_IMPORTED_MODULE_3__.Page404, {})
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Page404__WEBPACK_IMPORTED_MODULE_4__.Page404, {})
     }))]
   });
 });
