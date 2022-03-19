@@ -26,29 +26,6 @@ function App() {
 
 /***/ }),
 
-/***/ "./resources/ts/components/pages/Home.tsx":
-/*!************************************************!*\
-  !*** ./resources/ts/components/pages/Home.tsx ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Home": () => (/* binding */ Home)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var Home = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
-    children: "simple-sns\uFF08\u8868\u793A\u30C1\u30A7\u30C3\u30AF\uFF09"
-  });
-});
-
-/***/ }),
-
 /***/ "./resources/ts/components/pages/Login.tsx":
 /*!*************************************************!*\
   !*** ./resources/ts/components/pages/Login.tsx ***!
@@ -95,6 +72,29 @@ var Page404 = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
 
 /***/ }),
 
+/***/ "./resources/ts/components/pages/Tweet.tsx":
+/*!*************************************************!*\
+  !*** ./resources/ts/components/pages/Tweet.tsx ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Tweet": () => (/* binding */ Tweet)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+var Tweet = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
+    children: "simple-sns\uFF08\u8868\u793A\u30C1\u30A7\u30C3\u30AF\uFF09"
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/ts/index.tsx":
 /*!********************************!*\
   !*** ./resources/ts/index.tsx ***!
@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _components_pages_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/pages/Home */ "./resources/ts/components/pages/Home.tsx");
+/* harmony import */ var _components_pages_Tweet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/pages/Tweet */ "./resources/ts/components/pages/Tweet.tsx");
 /* harmony import */ var _components_pages_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/pages/Login */ "./resources/ts/components/pages/Login.tsx");
 /* harmony import */ var _components_pages_Page404__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/pages/Page404 */ "./resources/ts/components/pages/Page404.tsx");
 
@@ -147,9 +147,9 @@ var Router = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
     }, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Login__WEBPACK_IMPORTED_MODULE_3__.Login, {})
     })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, Object.assign({
-      path: "/home"
+      path: "/tweet"
     }, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Home__WEBPACK_IMPORTED_MODULE_2__.Home, {})
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_pages_Tweet__WEBPACK_IMPORTED_MODULE_2__.Tweet, {})
     })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, Object.assign({
       path: "*"
     }, {

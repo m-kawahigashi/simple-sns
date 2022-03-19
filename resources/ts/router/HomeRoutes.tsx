@@ -1,4 +1,4 @@
-import { Home } from "../components/pages/Home";
+import { Tweet } from "../components/pages/Tweet";
 import { Page404 } from "../components/pages/Page404";
 
 export const homeRoutes = [
@@ -6,7 +6,7 @@ export const homeRoutes = [
     {
         path:"/",
         exact: true,
-        children: <Home />
+        children: <Tweet />
     },
     // 設定URL以外にアクセスした場合
     {
