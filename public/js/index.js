@@ -13386,6 +13386,35 @@ function createSpacing() {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/styles/createStyles.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/styles/createStyles.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createStyles)
+/* harmony export */ });
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/createStyles/createStyles.js");
+ // let warnOnce = false;
+// To remove in v5
+
+function createStyles(styles) {
+  // warning(
+  //   warnOnce,
+  //   [
+  //     'Material-UI: createStyles from @material-ui/core/styles is deprecated.',
+  //     'Please use @material-ui/styles/createStyles',
+  //   ].join('\n'),
+  // );
+  // warnOnce = true;
+  return (0,_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["default"])(styles);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/styles/createTheme.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/createTheme.js ***!
@@ -15023,6 +15052,23 @@ function createGenerateClassName() {
 
     return "".concat(seedPrefix).concat(suffix);
   };
+}
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/styles/esm/createStyles/createStyles.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@material-ui/styles/esm/createStyles/createStyles.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createStyles)
+/* harmony export */ });
+function createStyles(styles) {
+  return styles;
 }
 
 /***/ }),
@@ -16765,12 +16811,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/makeStyles.js");
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/esm/Card/Card.js");
-/* harmony import */ var _material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/CardActionArea */ "./node_modules/@material-ui/core/esm/CardActionArea/CardActionArea.js");
-/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/CardActions */ "./node_modules/@material-ui/core/esm/CardActions/CardActions.js");
-/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/CardContent */ "./node_modules/@material-ui/core/esm/CardContent/CardContent.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/Button.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/createStyles.js");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/esm/Card/Card.js");
+/* harmony import */ var _material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/CardActionArea */ "./node_modules/@material-ui/core/esm/CardActionArea/CardActionArea.js");
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CardActions */ "./node_modules/@material-ui/core/esm/CardActions/CardActions.js");
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/CardContent */ "./node_modules/@material-ui/core/esm/CardContent/CardContent.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/TextField.js");
 /* harmony import */ var _organisms_layout_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../organisms/layout/Header */ "./resources/ts/components/organisms/layout/Header.tsx");
 
 
@@ -16779,6 +16827,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
  // import CardMedia from '@material-ui/core/CardMedia';
+
 
 
 
@@ -16793,21 +16842,55 @@ var useStyles = (0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["defaul
     height: 140
   }
 });
+var useTweetStyles = (0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["default"])(function (theme) {
+  return (0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["default"])({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      maxWidth: '90%',
+      margin: 'auto'
+    } // textField: {
+    //   marginLeft: theme.spacing(1),
+    //   marginRight: theme.spacing(1),
+    //   width: '25ch',
+    // },
+
+  });
+});
 var Tweet = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
   var classes = useStyles();
+  var tweetClasses = useTweetStyles();
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_organisms_layout_Header__WEBPACK_IMPORTED_MODULE_2__.Header, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_4__["default"], Object.assign({
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_organisms_layout_Header__WEBPACK_IMPORTED_MODULE_2__.Header, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", Object.assign({
+      className: tweetClasses.root
+    }, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        id: "outlined-full-width",
+        // label="Label"
+        style: {
+          margin: 8
+        },
+        placeholder: "\u3064\u3076\u3084\u304D",
+        helperText: "\u30C4\u30A4\u30FC\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
+        fullWidth: true,
+        margin: "normal",
+        InputLabelProps: {
+          shrink: true
+        },
+        variant: "outlined"
+      })
+    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({
       className: classes.root
     }, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             gutterBottom: true,
             variant: "h5",
             component: "h2"
           }, {
             children: "MASA"
-          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             variant: "body2",
             color: "textSecondary",
             component: "p"
@@ -16815,31 +16898,31 @@ var Tweet = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
             children: "\u30C4\u30A4\u30FC\u30C8\u30C6\u30B9\u30C8\u30C4\u30A4\u30FC\u30C8\u30C6\u30B9\u30C8\u30C4\u30A4\u30FC\u30C8\u30C6\u30B9\u30C8"
           }))]
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
           children: "\u7DE8\u96C6"
-        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
           children: "\u524A\u9664"
         }))]
       })]
-    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_4__["default"], Object.assign({
+    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({
       className: classes.root
     }, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             gutterBottom: true,
             variant: "h5",
             component: "h2"
           }, {
             children: "MASA"
-          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             variant: "body2",
             color: "textSecondary",
             component: "p"
@@ -16847,31 +16930,31 @@ var Tweet = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
             children: "\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8"
           }))]
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
           children: "\u7DE8\u96C6"
-        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
           children: "\u524A\u9664"
         }))]
       })]
-    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_4__["default"], Object.assign({
+    })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({
       className: classes.root
     }, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             gutterBottom: true,
             variant: "h5",
             component: "h2"
           }, {
             children: "MASA"
-          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({
+          })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
             variant: "body2",
             color: "textSecondary",
             component: "p"
@@ -16879,13 +16962,13 @@ var Tweet = (0,react__WEBPACK_IMPORTED_MODULE_1__.memo)(function () {
             children: "\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8"
           }))]
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
           children: "\u7DE8\u96C6"
-        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+        })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
           size: "small",
           color: "primary"
         }, {
