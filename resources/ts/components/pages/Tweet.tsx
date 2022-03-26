@@ -32,11 +32,6 @@ const useStyles = makeStyles({
       maxWidth: '90%',
       margin: 'auto',
     },
-    // textField: {
-    //   marginLeft: theme.spacing(1),
-    //   marginRight: theme.spacing(1),
-    //   width: '25ch',
-    // },
   }),
 );
 
